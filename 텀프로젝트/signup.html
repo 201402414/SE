@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>term</title>
+  <link href="sys.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+  <form class="login_form" action="idpw.php" method="post" enctype="multipart/form-data" onsubmit="return idpw_submit_button()">
+    <table>
+      <tr>
+        <td></td>
+        <td id = "title_cell" colspan="2"><h2>회원가입</h2></td>
+      </tr>
+      <tr>
+        <td>이름 : </td>
+        <td colspan="2"><input type="text" name="signup_name" value="" id="signup_name" required ></td>
+
+      </tr>
+      <tr>
+        <td>ID : </td>
+        <td colspan="2"><input type="text" name="signup_id" value="" id="signup_id" required></td>
+      </tr>
+      <tr>
+        <td>PW : </td>
+        <td colspan="2"><input type="text" name="signup_pw" value="" id="signup_pw" required></td>
+      </tr>
+      <tr>
+        <td>Tel : </td>
+        <td colspan="2"><input type="text" name="signup_tel" value="" id="signup_tel" required></td>
+      </tr>
+      <tr>
+        <td>E-mail :</td>
+        <td colspan="2"><input type="text" name="signup_email" value="" id="signup_email" required></td>
+      </tr>
+      <tr>
+        <td><br><br></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" formaction="signup.php" name="" value="가입하기" id = "signup_btn"></td>
+        <td><input type="button" name="" value="취소" id = "cancel_btn" onClick="signup_cancel()"></td>
+      </tr>
+      <tr>
+        <td><br></td>
+      </tr>
+
+    </table>
+  </form>
+
+    <script src="sys.js" type="text/javascript"></script>
+</body>
+
+</html>

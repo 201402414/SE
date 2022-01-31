@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>term</title>
+  <link href="card.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+  <form class="card_form"  method="post" enctype="multipart/form-data" >
+    <table>
+      <tr>
+        <td></td>
+        <td id = "title_cell" colspan="2"><h2>카드결제</h2></td>
+      </tr>
+      <tr>
+        <td>카드번호 : </td>
+        <td colspan="2"><input type="text" name="card_number" placeholder="뒷 4자리를 입력하세요" id="card_number" pattern="[0-9]{4}" required></td>
+
+      </tr>
+      <tr>
+        <td>비밀번호 : </td>
+        <td colspan="2"><input type="text" name="card_pw" placeholder="앞 2자리를 입력하세요" id="card_pw" pattern="[0-9]{2}" required></td>
+      </tr>
+      <tr>
+        <td>유효기간 : </td>
+        <td colspan="2"><input type="text" name="card_period" placeholder="00/00" id="card_period" pattern="[0-1]{1}[1-9]{1}/2[0-9]{1}" required></td>
+      </tr>
+      <tr>
+        <td><br><br></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" formaction="finalSave.php" name="" value="결제하기" id = "pay_btn"></td>
+        <td><input type="button" name="" value="취소" id = "cancel_btn" onClick="card_cancel()"></td>
+      </tr>
+      <tr>
+        <td><br></td>
+      </tr>
+
+    </table>
+  </form>
+
+  <script src="payment.js" type="text/javascript"></script>
+</body>
+
+</html>

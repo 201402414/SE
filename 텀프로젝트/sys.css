@@ -1,0 +1,22 @@
+#non_member_book{
+  height: 25px;
+  width : 170px;
+}
+#submit_btn{
+  height: 25px;
+  width : 80px;
+}
+#cancel_btn{
+  height: 25px;
+  width : 80px;
+}
+#signin_cell{
+  text-align: center;
+}
+#signup_btn{
+  height: 25px;
+  width : 80px;
+}
+#title_cell{
+  text-align: center;
+}
